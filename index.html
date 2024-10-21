@@ -29,39 +29,46 @@
           Photo by <span class="photographer-name">Carla Santiago</span>
         </footer>
       </div>
-      <div class="form-container">
-        <h1>Get started</h1>
-        <form action="#" method="post">
-          <div class="name-info">
+      <form action="#" method="post">
+        <h1>Get Started</h1>
+        <div class="name-info">
+          <div>
             <label for="first_name">First Name</label>
-            <input type="text" id="first_name" name="first_name" />
+            <input type="text" id="first_name" name="first_name" required />
+          </div>
+          <div>
             <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" name="last_name" />
+            <input type="text" name="last_name" id="last_name" required />
           </div>
-          <div class="contact-info">
-            <label for="user_email">Email</label>
-            <input type="email" id="user_email" name="user_email" />
-            <label for="user_phone">Phone Number</label>
-            <input type="tel" id="user_phone" name="user_phone" />
+        </div>
+        <div class="contact-info">
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
           </div>
-          <div class="password-info">
-            <label for="user_password">Password</label>
-            <input type="password" id="user_password" name="user_password" />
-            <label for="user_phone">Confirm Password</label>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" required />
+          </div>
+        </div>
+        <div class="password-info">
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div>
+            <label for="confirmed-password">Confirm Password</label>
             <input
               type="password"
-              id="user_confirmed_password"
-              name="user_confirmed_password"
+              name="confirmed-password"
+              id="confirmed-password"
+              required
             />
           </div>
-          <div class="create-account">
-            <button type="submit" class="btn">Create Account</button>
-            <p>
-              Already have an account? <span class="login-text">Log in</span>
-            </p>
-          </div>
-        </form>
-      </div>
+        </div>
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <span class="log-in-text">Log in</span></p>
+      </form>
     </div>
   </body>
 </html>
